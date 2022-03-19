@@ -74,7 +74,7 @@ end
         
         if cmd == "cmds" then
         print([[
-            .lagserver - crashes everyone
+            .lagserver - crashes everyone (layered clothing and r15 only)
             .re - resets Character
             .serverhop - goes on other server
             .cmds - shows all commands
