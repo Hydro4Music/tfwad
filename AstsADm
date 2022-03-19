@@ -4,10 +4,7 @@ local ts = game:GetService("TeleportService")
 local x = {}
 local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport
 
-	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console, ",
-	Color = Color3.fromRGB(229, 0, 0)
-	})
+
 
 speaker.Chatted:Connect(function(msg)
 	msg = msg:lower()
@@ -82,7 +79,11 @@ end
             .fpsboost - boosts fps
             ]])
         end
-        
+        	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console, ",
+	Color = Color3.fromRGB(229, 0, 0)
+	})
+	
         if cmd == "inf" then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
         end
