@@ -1,5 +1,5 @@
         game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console, ",
+	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console",
 	Color = Color3.fromRGB(229, 0, 0)
 	})
 
