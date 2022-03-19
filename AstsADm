@@ -44,7 +44,7 @@ end
 end
         if cmd == "serverhop" then
         if (queue_on_teleport) then
-        queue_on_teleport("loadstring(game.HttpGet(game, \"https://\"))()");
+        queue_on_teleport("loadstring(game.HttpGet(game, \"https://https://raw.githubusercontent.com/Hydro4Music/tfwad/main/AstsADm\"))()");
         end;
         for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
 		if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
