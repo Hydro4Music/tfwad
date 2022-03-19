@@ -1,6 +1,6 @@
 
 _G.shoption = "largest" 
-wait(5) if not game:IsLoaded() then game.Loaded:Wait() end
+
 
 local lp = game.Players.LocalPlayer
 repeat wait() until lp and lp.Character and lp.Character:FindFirstChild("HumanoidRootPart")
