@@ -4,10 +4,7 @@ local ts = game:GetService("TeleportService")
 local x = {}
 
 
-	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console",
-	Color = Color3.fromRGB(229, 0, 0)
-	})
+
 
 speaker.Chatted:Connect(function(msg)
 	msg = msg:lower()
@@ -87,6 +84,10 @@ end
 end
 end)
 
+	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console",
+	Color = Color3.fromRGB(229, 0, 0)
+	})
 
 
 function GetPlayer(String)
