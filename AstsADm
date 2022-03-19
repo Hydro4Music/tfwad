@@ -3,6 +3,12 @@ local speaker = game.Players.LocalPlayer
 local ts = game:GetService("TeleportService")
 local x = {}
 local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport
+
+	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+	Text = "Thanks For Using HexR Admin Script Made By HexR#6666, For Commands Chat .cmds And Check Console, ",
+	Color = Color3.fromRGB(229, 0, 0)
+	})
+
 speaker.Chatted:Connect(function(msg)
 	msg = msg:lower()
 	if string.sub(msg,1,3) == "/e " then
@@ -57,7 +63,30 @@ end
 	    wait(1)
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
 	end
-	end
+        end
+        
+        
+        if cmd == "boostfps" then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Hydro4Music/tfwad/main/fps'))()
+
+		end
+
+        
+        if cmd == "cmds" then
+        print([[
+            .lagserver - crashes everyone
+            .re - resets Character
+            .serverhop - goes on other server
+            .cmds - shows all commands
+            .inf - loads infinite yield
+            .fpsboost - boosts fps
+            ]])
+        end
+        
+        if cmd == "inf" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        end
+        
 end
 end)
 
