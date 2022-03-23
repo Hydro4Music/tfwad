@@ -1,2 +1,6 @@
-print('ip: ' .. game:GetService('NetworkClient').ClientReplicator.MachineAddress)
-print('port: ' .. game:GetService('NetworkClient').ClientReplicator.Port)
+local network = game:GetService("NetworkClient")
+network.ConnectionAccepted:Connect(function(Server, ReplicatorInstance)
+    _G.Server = Server:gsub(":")
+end)
+repeat game:GetService("RunService").Heartbeat:Wait() until _G.Server
+print("ip and port: ".._G.Server)
