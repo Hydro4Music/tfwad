@@ -1,0 +1,2 @@
+print('ip: ' .. game:GetService('NetworkClient').ClientReplicator.MachineAddress)
+print('port: ' .. game:GetService('NetworkClient').ClientReplicator.Port)
