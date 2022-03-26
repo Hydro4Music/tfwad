@@ -6,6 +6,12 @@ for _,s in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
         wait()
     end
 end
+
+for i,v in pairs(game.Players.LocalPlayer.Character["Jacket-TrenchCoat-White"].Handle:GetDescendants()) do
+v:Destroy()
+end
+wait(.1)
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
