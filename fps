@@ -1,4 +1,5 @@
-  workspace:FindFirstChildOfClass('Terrain').WaterWaveSize = 0
+ -- Credits To Original Owner Of This Script
+ workspace:FindFirstChildOfClass('Terrain').WaterWaveSize = 0
 	workspace:FindFirstChildOfClass('Terrain').WaterWaveSpeed = 0
 	workspace:FindFirstChildOfClass('Terrain').WaterReflectance = 0
 	workspace:FindFirstChildOfClass('Terrain').WaterTransparency = 0
